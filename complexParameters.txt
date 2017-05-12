@@ -1,0 +1,26 @@
+Flip angle-> Flip
+TR-> TR
+TE-> TE
+TI-> TI
+FoV read-> FOVr
+FoV phase-> FOVp
+Phase enc. dir.-> Ph. dir.
+Base resolution-> XRES
+Phase resolution-> YRES
+Matrix-> Matrix
+Slice resolution-> Slice res.
+Slices-> 2D slices
+Slices per slab-> 3D slices
+Slice thickness-> Slthick
+Dist. factor-> Dist. fact.
+Fat suppr.-> Fat
+Bandwidth-> BW
+Averages-> Ave
+Concatenations-> Concat
+Phase partial Fourier-> Ph. Fourier
+Slice partial Fourier-> Sl. Fourier
+PAT-> PAT
+Accel. factor PE-> Ph accel
+Accel. factor 3D-> Sl accel
+Set-n-Go Protocol-> SetNGo
+Scan time-> Scan time
