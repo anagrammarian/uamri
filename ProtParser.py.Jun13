@@ -344,7 +344,6 @@ def write_matrices_to_html_file(xml_file, custom_parameter_matrix, complex_param
     engine_name = engine_name.replace(" ", "_")
     seriesName = engine_name + '.htm'#seriesName.replace("/", "_") + '-' + engine_name + '.htm'
     currentPath = os.getcwd()
-    seriesName = seriesNameFile + '.htm'#seriesName.replace("/", "_") + '-' + engine_name + '.htm'
     seriesNameFile = currentPath + "/" + seriesName
 
 
@@ -366,7 +365,7 @@ def write_matrices_to_html_file(xml_file, custom_parameter_matrix, complex_param
         f = open(seriesNameFile, 'w+')
         f.write(R[0])
     else:
-        print("Creating output file " + seriesName)
+        print("Now creating: " + seriesName)
         f = open(seriesNameFile, 'w+')
         #print('CREATING NEW HTML')
         f.write('<!DOCTYPE html> \n')
@@ -595,17 +594,17 @@ def move_through_directories_recursively():
 
 def parsing_options():
     if len(sys.argv) != 2:
-        print('Usage: ProtParser.py <xml_file> where xml_file can be .xml or allfiles or alldirs')
+        print('"ProtParser.py <xml_file_name> or <all_in_cwd> or <all_directories>"')
         sys.exit()
 
     else:
         xml_file = sys.argv[1]
 
-    if xml_file.endswith('allfiles') or xml_file.endswith('ALLFILES'):
+    if xml_file.endswith('all_in_cwd') or xml_file.endswith('ALL_IN_CWD'):
         print('All xml files in current directory will be run through protParser now!')
         parse_all_prots()
 
-    elif xml_file.endswith('alldirs') or xml_file.endswith('ALLDIRS'):
+    elif xml_file.endswith('all_directories') or xml_file.endswith('ALL_DIRECTORIES'):
         move_through_directories_recursively()
     else:
         if xml_file.endswith('.xml'):
@@ -615,7 +614,7 @@ def parsing_options():
                 print("File not found!")
         else:
             print('File name must end in .xml. ')
-            print('"ProtParser.py <xml_file_name> or <allfiles> or <alldirs>"')
+            print('"ProtParser.py <xml_file_name> or <all_in_cwd> or <all_directories>"')
 
     return
 
