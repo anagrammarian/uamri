@@ -6,10 +6,13 @@ FoV phase-> FOVp
 Matrix-> Matrix
 Base resolution-> XRES
 Phase resolution-> YRES
-Slices-> 2D slices
-Slices per slab->3D slices
-Slice thickness-> Slthick
-Dist. factor-> Dist. fact.
+Slices-> slices
+Slices per slab->3D sl#
+Slice thickness-> thick
+Dist. factor-> spac %
+Turbo factor-> ETL
+Averages-> Ave
+Concatenations-> Concat
 PAT-> PAT
 Scan time-> Scan time
 Notes-> Notes

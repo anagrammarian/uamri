@@ -10,7 +10,7 @@
       <root name="\\1_clinical skyra protocols">
         <region name="BRAIN">
           <NormalExam_dot_engine name="BRN MS">
-            <program name="B5 - BRN MS">
+            <program name="BRN MS">
               <NormalStep_decision_branch name="AAHScout" Id="255fe5a8-57d4-4396-a1d1-9a96adb5f600" />
               <NormalStep_decision_branch name="AX DWI" Id="23f9aadd-2298-4045-9f16-d65627fef80a" />
               <NormalStep_decision_branch name="SAG 3D FLAIR" Id="7bb5b36c-6f5e-4510-a6c0-5711c4135d1c" />
