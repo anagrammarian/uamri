@@ -28,7 +28,7 @@ def runCreateLinks(link):
         f.close()
 
 #        from websiteCreator import link
-        f = open('index.html', 'w')
+        f = open('index.html', 'w+')
         f.write(R[0])
         f.write('<p>\n')
         #        f.write('<font size="5"><A HREF = "'+ url + str(PathLink) + '/' + directory + '">' + directory.split('.htm')[0].replace("_"," ") + '</A></font>')

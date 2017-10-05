@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<style>
+table, th, td {
+	 border: 1px solid black;
+}
+th, td { 
+ 	 padding: 15px;
+}</style>
+</head>
+<body>
+<a href="#1">Jump to Table 1</a>
+<a href="#2">Jump to Table 2</a>
+<a href="#3">Jump to Table 3</a>
+<a href="#4">Jump to Table 4</a>
+<a href="#5">Jump to Table 5</a>
+<a href="#6">Jump to Table 6</a>
+<h2 id="6">DEVELOPMENT SEQ (Total scan time: 17:2)</h2>
+<h2>Overview</h2>
+<table style="width:100%">
+<table style="background-color:#FFFFE0;"> 
+<tr style="background-color:#BDB76B;color:ffffff;"> 
+<th>Series</th><th> TR</th><th> TE</th><th> TI</th><th> FOVr</th><th> FOVp</th><th> Matrix</th><th> XRES</th><th> YRES</th><th> slices</th><th>3D sl#</th><th> thick</th><th> spac %</th><th> ETL</th><th> Ave</th><th> Concat</th><th> PAT</th><th> Scan time</th></tr>
+<tr><td>DCE 400 fov 20 measurements</td><td>2.24 ms</td><td>0.85 ms</td><td>-</td><td>400 mm</td><td>100.0 %</td><td>256 X 256</td><td>256 </td><td>100 %</td><td>-</td><td>56 </td><td>3.00 mm</td><td>20 %</td><td>-</td><td>1 </td><td>-</td><td>2</td><td>3:08</td></tr>
+<tr><td>DCE COR 400 FOV 40</td><td>6.28 ms</td><td>-</td><td>-</td><td>400 mm</td><td>100.0 %</td><td>288 X 288</td><td>288 </td><td>100 %</td><td>-</td><td>40 </td><td>5.0 mm</td><td>20 %</td><td>-</td><td>1 </td><td>1 </td><td>4</td><td>3:37</td></tr>
+<tr><td>DIFF Ax</td><td>6300 ms</td><td>73.0 ms</td><td>-</td><td>234 mm</td><td>100.0 %</td><td>128 X 128</td><td>128 </td><td>100 %</td><td>24 </td><td>-</td><td>5.0 mm</td><td>20 %</td><td>-</td><td>2 </td><td>1 </td><td>2</td><td>2:14</td></tr>
+<tr><td>Vibe Coro PRE</td><td>4.16 ms</td><td>1.65 ms</td><td>-</td><td>380 mm</td><td>100.0 %</td><td>480 X 480</td><td>480 </td><td>100 %</td><td>-</td><td>96 </td><td>1.0 mm</td><td>20 %</td><td>-</td><td>1 </td><td>1 </td><td>2</td><td>2:50</td></tr>
+<tr><td>DCE</td><td>2.80 ms</td><td>1.04 ms</td><td>-</td><td>440 mm</td><td>68.8 %</td><td>384 X 384</td><td>384 </td><td>100 %</td><td>-</td><td>80 </td><td>2.00 mm</td><td>-</td><td>-</td><td>-</td><td>-</td><td>3</td><td>2:23</td></tr>
+<tr><td>Vibe Coro Post</td><td>4.16 ms</td><td>1.65 ms</td><td>-</td><td>380 mm</td><td>100.0 %</td><td>480 X 480</td><td>480 </td><td>100 %</td><td>-</td><td>96 </td><td>1.0 mm</td><td>20 %</td><td>-</td><td>1 </td><td>1 </td><td>2</td><td>2:50</td></tr>
+</table>
+<br></br>
+<table style="width:100%">
+<h2>
+Detailed
+</h2>
+<table style="background-color:#CAE8FC;"> 
+<tr style="background-color:#0613D7;color:#FBFBFC;"> 
+<th>Sequence Parameters</th><th>DCE 400 fov 20 measurements</th><th>DCE COR 400 FOV 40</th><th>DIFF Ax</th><th>Vibe Coro PRE</th><th>DCE</th><th>Vibe Coro Post</th></tr>
+<tr><td> Flip</td><td>19 deg</td><td>20.0 deg</td><td>-</td><td>12.0 deg</td><td>25 deg</td><td>12.0 deg</td></tr>
+<tr><td> TR</td><td>2.24 ms</td><td>6.28 ms</td><td>6300 ms</td><td>4.16 ms</td><td>2.80 ms</td><td>4.16 ms</td></tr>
+<tr><td> TE</td><td>0.85 ms</td><td>-</td><td>73.0 ms</td><td>1.65 ms</td><td>1.04 ms</td><td>1.65 ms</td></tr>
+<tr><td> TI</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td> FOVr</td><td>400 mm</td><td>400 mm</td><td>234 mm</td><td>380 mm</td><td>440 mm</td><td>380 mm</td></tr>
+<tr><td> FOVp</td><td>100.0 %</td><td>100.0 %</td><td>100.0 %</td><td>100.0 %</td><td>68.8 %</td><td>100.0 %</td></tr>
+<tr><td> Ph. dir.</td><td>R >> L </td><td>R >> L </td><td>A >> P </td><td>R >> L </td><td>R >> L </td><td>R >> L </td></tr>
+<tr><td> XRES</td><td>256 </td><td>288 </td><td>128 </td><td>480 </td><td>384 </td><td>480 </td></tr>
+<tr><td> YRES</td><td>100 %</td><td>100 %</td><td>100 %</td><td>100 %</td><td>100 %</td><td>100 %</td></tr>
+<tr><td> Matrix</td><td>256 X 256</td><td>288 X 288</td><td>128 X 128</td><td>480 X 480</td><td>384 X 384</td><td>480 X 480</td></tr>
+<tr><td> Slice res.</td><td>64 %</td><td>65 %</td><td>-</td><td>90 %</td><td>50 %</td><td>90 %</td></tr>
+<tr><td> 2D slices</td><td>-</td><td>-</td><td>24 </td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td> 3D slices</td><td>56 </td><td>40 </td><td>-</td><td>96 </td><td>80 </td><td>96 </td></tr>
+<tr><td> Slthick</td><td>3.00 mm</td><td>5.0 mm</td><td>5.0 mm</td><td>1.0 mm</td><td>2.00 mm</td><td>1.0 mm</td></tr>
+<tr><td> Dist. fact.</td><td>20 %</td><td>20 %</td><td>20 %</td><td>20 %</td><td>-</td><td>20 %</td></tr>
+<tr><td> Fat</td><td>None </td><td>None </td><td>SPAIR </td><td>Q-fat sat. </td><td>None </td><td>Q-fat sat. </td></tr>
+<tr><td> BW</td><td>980 Hz/Px</td><td>-</td><td>1860 Hz/Px</td><td>400 Hz/Px</td><td>650 Hz/Px</td><td>400 Hz/Px</td></tr>
+<tr><td> Ave</td><td>1 </td><td>1 </td><td>2 </td><td>1 </td><td>-</td><td>1 </td></tr>
+<tr><td> Concat</td><td>-</td><td>1 </td><td>1 </td><td>1 </td><td>-</td><td>1 </td></tr>
+<tr><td> Ph. Fourier</td><td>6/8 </td><td>7/8 </td><td>6/8 </td><td>Off </td><td>Off </td><td>Off </td></tr>
+<tr><td> Sl. Fourier</td><td>6/8 </td><td>7/8 </td><td>-</td><td>Off </td><td>Off </td><td>Off </td></tr>
+<tr><td> PAT</td><td>2</td><td>4</td><td>2</td><td>2</td><td>3</td><td>2</td></tr>
+<tr><td> Ph accel</td><td>2 </td><td>2 </td><td>2 </td><td>2 </td><td>3 </td><td>2 </td></tr>
+<tr><td> Sl accel</td><td>1 </td><td>2 </td><td>-</td><td>1 </td><td>1 </td><td>1 </td></tr>
+<tr><td> SetNGo</td><td>Off </td><td>Off </td><td>On </td><td>On </td><td>Off </td><td>On </td></tr>
+</table>
+
+<br></br><textarea rows="6" cols="140">Insert notes here</textarea><br></br><textarea rows="6" cols="140">Indications</textarea><br></br><img src="TUMORADDON.jpg" alt="Placer Image" style="width:304px;height:228px;">
+
+<br></br></body>
+</html>
